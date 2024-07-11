@@ -1,3 +1,176 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+// @import "font-awesome/scss/font-awesome.scss";
+@import "bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Neonderthaw&family=Quattrocento:wght@400;700&family=UnifrakturMaguntia&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Global styles
+@font-face {
+    font-family: 'h2-font';
+    src: url(../assets/fonts/MortalClaws-8MYRg.ttf);
+}
+.unna-regular {
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .unna-bold {
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .unna-regular-italic {
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .unna-bold-italic {
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .unifrakturmaguntia-regular {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h2 {
+    font-family: "UniFrakturMaguntia", cursive;
+    font-size: 3rem;  
+}
+
+body {
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+}
+
+nav {
+  background-color: #000000;
+}
+
+h1{
+    padding-top: 70px;
+}
+
+.container.text-center {
+    text-align: center;
+    max-width: 85%;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border: none; // Remove all borders from the card
+    background-color: #000000;
+    color: #ffffff;
+
+
+    .card-img {
+      position: absolute;
+      max-width: 100%;
+      height: auto; /* Ensure images maintain aspect ratio */
+    }
+
+    .card-img-overlay {
+      position: relative;
+      z-index: 2;
+    //   background: rgba(0, 0, 0, 0.5); // Optional for better text readability
+    }
+  }
+
+  .navbar-toggler {
+    border-color: transparent; // Optional: to hide the border
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    // Change the %23ff0000 to the hex color code you want (without the # symbol)
+  }
+  
+
+    // contact card section
+  .contact {
+    .card {
+      background-color: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
+      backdrop-filter: blur(10px); /* Adds a blur effect */
+      border: none; /* Remove any existing borders */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+      transition: background-color 0.3s ease; /* Optional: Smooth transition effect */
+  
+      .card-body {
+        /* Adjust text and button styles as needed */
+        h5.card-title {
+          color: #ffffff; /* Text color */
+        }
+        p.card-text {
+          color: #ffffff; /* Text color */
+        }
+        a.btn.btn-primary {
+          background-color: rgba(255, 255, 255, 0.3); /* Button background color with opacity */
+          color: #ffffff; /* Button text color */
+          border: none; /* Remove button border */
+        }
+      }
+    }
+  }
+  
+
+// FAQs section
+.FAQs {
+    margin: 40px;
+}
+
+.ft-border {
+    max-width: 100%;  // Ensures the container can't exceed its parent's width
+    overflow: hidden; // Prevents the image from overflowing the container
+    
+    img {
+      display: block; // Ensures image behaves as a block element
+      max-width: 100%; // Makes the image responsive by limiting its maximum width to 100% of its container
+      height: auto;    // Allows the image height to adjust proportionally to its width
+    }
+  }
+  
+
+
+/* Importing Bootstrap */
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Hidden by default */
+  background-color: #ff0000a3; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: #ff1d1d6e; /* Darker shade on hover */
+  }
+}
+
+/* Optional: additional custom styles */
+
+
+// footer section
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
