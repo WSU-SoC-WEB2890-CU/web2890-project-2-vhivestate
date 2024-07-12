@@ -7,33 +7,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Neonderthaw&family=Quattrocento:wght@400;700&family=UnifrakturMaguntia&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 // Global styles
+
+.nav-link {
+    color: rgb(0, 17, 255) !important;
+  }
+
+
 @font-face {
-    font-family: 'h2-font';
+    font-family: 'header-font';
     src: url(../assets/fonts/MortalClaws-8MYRg.ttf);
 }
-.unna-regular {
-    font-family: "Unna", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .unna-bold {
-    font-family: "Unna", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .unna-regular-italic {
-    font-family: "Unna", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .unna-bold-italic {
-    font-family: "Unna", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
 
   .unifrakturmaguntia-regular {
     font-family: "UnifrakturMaguntia", cursive;
@@ -46,6 +29,12 @@
     font-size: 3rem;  
 }
 
+h1 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 3rem;
+    padding-top: 50px;
+}
+
 body {
   background-color: #000000;
   text-align: center;
@@ -54,10 +43,6 @@ body {
 
 nav {
   background-color: #000000;
-}
-
-h1{
-    padding-top: 70px;
 }
 
 .container.text-center {
@@ -91,8 +76,37 @@ h1{
   }
   
   .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23ffffff" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgb(0,17,255)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
     // Change the %23ff0000 to the hex color code you want (without the # symbol)
+  }
+  
+  // Custom styles for off-canvas navigation
+.offcanvas {
+    background-color: black; // Change this to your desired background color
+    color: white; // Change this to your desired text color
+  
+    .offcanvas-header, .offcanvas-body {
+      color: inherit; // Ensure the text color is inherited from the parent
+    }
+  
+  
+    .btn-close {
+      filter: invert(1); // This inverts the close button color; adjust as needed
+    }
+  }
+
+  
+  .custom-button {
+    border: 2px solid royalblue; /* Change outline color to royal blue */
+    color: rgb(193, 207, 249); /* Change text color to royal blue */
+    background-color: rgba(255, 255, 255, 0); /* Make background transparent */
+  }
+  
+  .custom-button:hover {
+    border-color: royalblue;
+    color: royalblue;
+    background-color: transparent; /* Add a light blue background color on hover */
+    box-shadow: 0 10px 50px rgb(62, 143, 249); /* Add a glow effect on hover */
   }
   
 
@@ -128,6 +142,36 @@ h1{
     margin: 40px;
 }
 
+.FAQs {
+    background-color: #000000; /* Change this to your desired background color */
+    color: #333; /* Change this to your desired text color */
+  }
+  
+  .FAQs h2 {
+    color: #ffffff; /* Change this to your desired heading color */
+  }
+  
+  .FAQs .accordion-item {
+    background-color: #000000; /* Change this to your desired accordion item background color */
+    border: 1px solid #dee2e6; /* Change this to your desired accordion item border color */
+  }
+  
+  .FAQs .accordion-button {
+    color: #ffffff; /* Change this to your desired accordion button text color */
+    background-color: #000000; /* Change this to your desired accordion button background color */
+  }
+  
+  .FAQs .accordion-button:hover {
+    color: #ffffff; /* Change this to your desired accordion button hover text color */
+    background-color: #000000; /* Change this to your desired accordion button hover background color */
+  }
+  
+  .FAQs .accordion-body {
+    color: #ffffff; /* Change this to your desired accordion body text color */
+    background-color: #000000; /* Change this to your desired accordion body background color */
+  }
+  
+
 .ft-border {
     max-width: 100%;  // Ensures the container can't exceed its parent's width
     overflow: hidden; // Prevents the image from overflowing the container
@@ -149,7 +193,7 @@ h1{
   bottom: 20px;
   right: 20px;
   display: none; /* Hidden by default */
-  background-color: #ff0000a3; /* Bootstrap primary color */
+  background-color: #001affa3; /* Bootstrap primary color */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -160,7 +204,7 @@ h1{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    background-color: #ff1d1d6e; /* Darker shade on hover */
+    background-color: #1d46ff6e; /* Darker shade on hover */
   }
 }
 
@@ -174,3 +218,4 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
