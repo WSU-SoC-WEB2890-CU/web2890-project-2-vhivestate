@@ -67,12 +67,11 @@ nav {
     .card-img-overlay {
       position: relative;
       z-index: 2;
-    //   background: rgba(0, 0, 0, 0.5); // Optional for better text readability
     }
   }
 
   .navbar-toggler {
-    border-color: transparent; // Optional: to hide the border
+    border-color: transparent; 
   }
   
   .navbar-toggler-icon {
@@ -82,8 +81,8 @@ nav {
   
   // Custom styles for off-canvas navigation
 .offcanvas {
-    background-color: black; // Change this to your desired background color
-    color: white; // Change this to your desired text color
+    background-color: black; 
+    color: white; 
   
     .offcanvas-header, .offcanvas-body {
       color: inherit; // Ensure the text color is inherited from the parent
@@ -91,7 +90,7 @@ nav {
   
   
     .btn-close {
-      filter: invert(1); // This inverts the close button color; adjust as needed
+      filter: invert(1); // This inverts the close button color
     }
   }
 
@@ -113,19 +112,18 @@ nav {
     // contact card section
   .contact {
     .card {
-      background-color: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
+      background-color: rgba(255, 255, 255, 0.2); /* opacity */
       backdrop-filter: blur(10px); /* Adds a blur effect */
       border: none; /* Remove any existing borders */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
-      transition: background-color 0.3s ease; /* Optional: Smooth transition effect */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /*  Adds a shadow effect */
+      transition: background-color 0.3s ease; /* Smooth transition effect */
   
       .card-body {
-        /* Adjust text and button styles as needed */
         h5.card-title {
-          color: #ffffff; /* Text color */
+          color: #ffffff; 
         }
         p.card-text {
-          color: #ffffff; /* Text color */
+          color: #ffffff; 
         }
         a.btn.btn-primary {
           background-color: rgba(255, 255, 255, 0.3); /* Button background color with opacity */
@@ -140,37 +138,39 @@ nav {
 // FAQs section
 .FAQs {
     margin: 40px;
-}
-
-.FAQs {
-    background-color: #000000; /* Change this to your desired background color */
-    color: #333; /* Change this to your desired text color */
-  }
-  
-  .FAQs h2 {
-    color: #ffffff; /* Change this to your desired heading color */
+    font-family: "Bodoni Moda SC", serif;
+    background-color: #000000; 
+    color: #ffffff; 
   }
   
   .FAQs .accordion-item {
-    background-color: #000000; /* Change this to your desired accordion item background color */
-    border: 1px solid #dee2e6; /* Change this to your desired accordion item border color */
+    background-color: #000000; 
+    border: 1px solid #dee2e6; 
   }
   
   .FAQs .accordion-button {
-    color: #ffffff; /* Change this to your desired accordion button text color */
-    background-color: #000000; /* Change this to your desired accordion button background color */
+    color: #ffffff;
+    background-color: #000000; 
+    font-family: "Bodoni Moda SC", serif;
+
   }
   
   .FAQs .accordion-button:hover {
-    color: #ffffff; /* Change this to your desired accordion button hover text color */
-    background-color: #000000; /* Change this to your desired accordion button hover background color */
+    color: #ffffff; 
+    background-color: #000000; 
   }
   
   .FAQs .accordion-body {
-    color: #ffffff; /* Change this to your desired accordion body text color */
-    background-color: #000000; /* Change this to your desired accordion body background color */
+    color: #ffffff; 
+    background-color: #000000; 
   }
   
+.form {
+    border: 1px solid #dee2e6; 
+    border-radius: 10%;
+    margin: 40px;
+
+}
 
 .ft-border {
     max-width: 100%;  // Ensures the container can't exceed its parent's width
@@ -185,7 +185,7 @@ nav {
   
 
 
-/* Importing Bootstrap */
+
 
 /* Scroll to Top Button */
 .scroll-to-top {
@@ -208,7 +208,7 @@ nav {
   }
 }
 
-/* Optional: additional custom styles */
+
 
 
 // footer section
